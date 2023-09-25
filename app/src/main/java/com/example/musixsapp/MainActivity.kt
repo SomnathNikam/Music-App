@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://deezerdevs-deezer.p.rapidapi.com")
+//            .baseUrl("")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(apiinterface::class.java)
